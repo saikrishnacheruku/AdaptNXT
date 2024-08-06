@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+<h1>Weather Information for <span th:text="${city}">City</span></h1>
+<div th:if="${weather}">
+    <pre th:text="${weather}">Weather Data</pre>
+</div>
+<div th:if="${error}">
+    <p th:text="${error}">Error</p>
+</div>
+<a href="/">Back</a>
+</body>
+</html>
